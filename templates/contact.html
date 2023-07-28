@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block css %}
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color:#fff;
+    }
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.5),transparent),url("/static/images/seo_img.png");
+    }
+   .contact{
+    position: relative;
+    min-height: 100vh;
+    padding:50px 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   .contact .content{
+    max-width:800px;
+    text-align: center;
+   }
+   .contact .content h2{
+    font-size:36px;
+    font-weight:500;
+    color:#fff;
+   }
+   .contact .content p{
+    font-weight: 300;
+    color:#fff;
+   }
+   .container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px ;
+   }
+   .container .contactInfo{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    color:#fff;
+    font-weight: bolder;
+   }
+        
+</style>
+
+
+{% endblock %}
+{% block body %}
+<section class="contact">
+    <div class="content">
+        <h2>Contact us</h2>
+        <p></p>The best customer service is if the customer doesn't need to call you, doesn’t need to talk to you. It just works.</p>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Sector-F Jankipuram Lucknow 226021</p>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>840040****</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>preetisharma840040@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+{% endblock %}
+
+
+
+
+
+
